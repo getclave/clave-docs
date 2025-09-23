@@ -140,16 +140,6 @@
     "light": "/logo/light.png",
     "dark": "/logo/dark.png"
   },
-  "seo": {
-    "metatags": {
-      "og:title": "Clave Documentation",
-      "twitter:title": "Clave Documentation",
-      "og:description": "One click onboarding to future of finance",
-      "twitter:description": "One click onboarding to future of finance",
-      "og:image": "https://getclave.io/preview.png",
-      "twitter:image": "https://getclave.io/preview.png"
-    }
-  },
   "navbar": {
     "links": [
       {
