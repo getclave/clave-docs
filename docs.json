@@ -1,0 +1,173 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Clave Documentation",
+  "colors": {
+    "primary": "#00CED1",
+    "light": "#00CED1",
+    "dark": "#00CED1"
+  },
+  "favicon": "/favicon.png",
+  "navigation": {
+    "versions": [
+      {
+        "version": "EN",
+        "anchors": [
+          {
+            "anchor": "Documentation",
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "Clave",
+                "pages": ["en/welcome-to-clave", "en/about"]
+              },
+              {
+                "group": "Clave Guides",
+                "pages": [
+                  {
+                    "group": "Basics",
+                    "pages": [
+                      "en/how-to-create-account",
+                      "en/how-to-fund-your-wallet",
+                      "en/how-to-fund-your-wallet-from-other-chains",
+                      {
+                        "group": "Creating Passkeys",
+                        "pages": [
+                          {
+                            "group": "Android Specific",
+                            "pages": [
+                              "en/google-password-manager",
+                              "en/samsung-pass"
+                            ]
+                          },
+                          {
+                            "group": "iOS Specific",
+                            "pages": [
+                              "en/icloud-keychain",
+                              "en/renaming-passkeys"
+                            ]
+                          },
+                          "en/1password",
+                          "en/bitwarden"
+                        ]
+                      },
+                      "en/changing-theme",
+                      "en/hiding-balances"
+                    ]
+                  },
+                  {
+                    "group": "Log-in and Log-out",
+                    "pages": ["en/login-clave", "en/logout-clave"]
+                  },
+                  {
+                    "group": "Referral Program",
+                    "pages": ["en/invite-and-earn"]
+                  },
+                  {
+                    "group": "Send (Withdraw)",
+                    "pages": [
+                      "en/how-to-send-money-via-clave",
+                      "en/how-to-send-money-with-link"
+                    ]
+                  },
+                  {
+                    "group": "Swap",
+                    "pages": ["en/buying-tokens", "en/selling-tokens"]
+                  },
+                  {
+                    "group": "Earn",
+                    "pages": [
+                      "en/earn-deposit-and-withdrawals",
+                      "en/yield-opportunities",
+                      "en/reward-types"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Clave Technical Explainers",
+                "pages": [
+                  "en/technical-introduction",
+                  {
+                    "group": "Clave's Key Management System",
+                    "pages": [
+                      "en/clave-key-management",
+                      {
+                        "group": "Passkey Signer",
+                        "pages": [
+                          "en/passkeys-technical",
+                          "en/secure-enclave-technical"
+                        ]
+                      }
+                    ]
+                  },
+                  "en/recovery-technical"
+                ]
+              },
+              {
+                "group": "Additional",
+                "pages": [
+                  "en/how-to-contribute-to-clave",
+                  "en/how-to-delete-account"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Blog",
+          "href": "https://blog.getclave.com",
+          "icon": "newspaper"
+        },
+        {
+          "anchor": "X (Twitter)",
+          "href": "https://x.com/getclave",
+          "icon": "twitter"
+        },
+        {
+          "anchor": "Github",
+          "href": "https://github.com/getclave",
+          "icon": "github"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
+  },
+  "seo": {
+    "metatags": {
+      "og:title": "Clave Documentation",
+      "twitter:title": "Clave Documentation",
+      "og:description": "One click onboarding to future of finance",
+      "twitter:description": "One click onboarding to future of finance",
+      "og:image": "https://getclave.io/preview.png",
+      "twitter:image": "https://getclave.io/preview.png"
+    }
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:info@clave.team"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "getclave.com",
+      "href": "https://getclave.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "twitter": "https://x.com/getclave",
+      "github": "https://github.com/getclave",
+      "linkedin": "https://www.linkedin.com/company/getclave"
+    }
+  }
+}
