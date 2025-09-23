@@ -5,8 +5,9 @@ description: 'If you want to contribute to Clave Documentation by fixing typos o
 
 Clave uses Mintlify to create documentation. To contribute to Clave, you should start by installing Mintlify first.
 
-<Warning> Prerequisite:
-Please install [Node.js](https://nodejs.org/en) version 19 or higher before proceeding. </Warning>
+<Warning>
+Prerequisite: Please install [Node.js](https://nodejs.org/en) version 19 or higher before proceeding.
+</Warning>
 
 
 Follow these steps to install and run Mintlify on your operating system:
@@ -23,7 +24,7 @@ If you want to modify (fixing typos, enhancing the wording etc.) an existing tra
 1. **Fork the Project**
    Make a fork of the [clave-docs project](https://github.com/getclave/clave-docs) and create your branches from the default main branch.
    If your PR is still a work in progress, consider putting it into a Draft status. Once your PR is ready for review, switch it back to an active PR request, and any reviewers already attached will automatically get a notification.
-2. And start modifyingg the texts in the MDX files. Please follow PR Rules to Open a PR.
+2. And start modifying the texts in the MDX files. Please follow PR Rules to Open a PR.
 
 ### Adding a New Language
 
@@ -37,150 +38,11 @@ If you want to modify (fixing typos, enhancing the wording etc.) an existing tra
 ![how-to-contribute](/images/how-to-contribute.png)
 
 3. **Add Your Language to the JSON File**
-   Simply copy the code below and change `yourlanguage` to your language.
 
-> To configure all repetitions of a word (e.g., `yourlanguage`) on the same page in VSCode, follow these steps: **Select the `yourlanguage` Word**:  Then, use the key combination `Ctrl + Shift + L` (Windows/Linux) or `Cmd + Shift + L` (Mac) to select all occurrences of `yourlanguage` on the page. This allows you to edit them all at once. This way, you can edit all selected words simultaneously.
-
-
-
-Copy the code below and change it to your language
-
-```json
-{
-  "group": "Clave",
-  "pages": [
-    "yourlanguage/welcome-to-clave",
-    "yourlanguage/about"
-  ],
-  "version": "yourlanguage"
-},
-{
-  "group": "Clave Guides",
-  "pages": [
-    {
-      "group": "Basics",
-      "pages": [
-        "yourlanguage/how-to-create-account",
-        "yourlanguage/how-to-fund-your-wallet-on-zksync",
-        "yourlanguage/how-to-fund-your-wallet-from-other-chains",
-        {
-          "group": "Creating Passkeys",
-          "pages": [
-            {
-              "group": "Android Users",
-              "pages": [
-                "yourlanguage/google-password-manager",
-                "yourlanguage/bitwardyourlanguage-android",
-                "yourlanguage/samsung-pass"
-              ]
-            },
-            {
-              "group": "Apple Users",
-              "pages": [
-                "yourlanguage/icloud-keychain",
-                "yourlanguage/1password-apple",
-                "yourlanguage/bitwardyourlanguage-apple",
-                "yourlanguage/passkey-ryourlanguageame"
-              ]
-            }
-          ]
-        },
-        "yourlanguage/custom-tokyourlanguages",
-        "yourlanguage/problem-solving"
-      ],
-      "version": "yourlanguage"
-    },
-    {
-      "group": "Send & Receive",
-      "pages": [
-        "yourlanguage/how-to-send-money-via-clave",
-        "yourlanguage/how-to-send-money-with-link",
-        "yourlanguage/how-to-withdraw"
-      ],
-      "version": "yourlanguage"
-    },
-    {
-      "group": "Swap",
-      "pages": [
-        "yourlanguage/how-to-swap-your-tokens"
-      ],
-      "version": "yourlanguage"
-    },
-    {
-      "group": "Earn",
-      "pages": [
-        "yourlanguage/dex-pools",
-        "yourlanguage/one-sided",
-        "yourlanguage/earn-types"
-      ],
-      "version": "yourlanguage"
-    },
-    {
-      "group": "Account Security/Management",
-      "pages": [
-        "yourlanguage/how-to-assign-guardians",
-        "yourlanguage/how-to-recover-clave",
-        "yourlanguage/how-to-recover-eoa",
-        "yourlanguage/how-to-cancel-your-recovery",
-        "yourlanguage/remove-guardian"
-      ],
-      "version": "yourlanguage"
-    },
-    {
-      "group": "Wallet Connect Connections",
-      "pages": [
-        "yourlanguage/wc-connect",
-        "yourlanguage/wc-sessions"
-      ],
-      "version": "yourlanguage"
-    },
-    {
-      "group": "Split",
-      "pages": [
-        "yourlanguage/how-split-works",
-        "yourlanguage/split-use",
-        "yourlanguage/pay-debts"
-      ],
-      "version": "yourlanguage"
-    }
-  ],
-  "version": "yourlanguage"
-},
-{
-  "group": "Clave Technical Explainers",
-  "pages": [
-    "yourlanguage/technical-introduction",
-    "yourlanguage/zksync-aa-explainer",
-    {
-      "group": "Clave's Key Management System",
-      "pages": [
-        "yourlanguage/clave-key-management",
-        {
-          "group": "Passkey Signer",
-          "pages": [
-            "yourlanguage/passkeys-technical",
-            "yourlanguage/secure-yourlanguageclave-technical"
-          ]
-        },
-        {
-          "group": "Recovery Mechanisms",
-          "pages": [
-            "yourlanguage/recovery-technical",
-            "yourlanguage/zkemail-recovery-technical"
-          ]
-        }
-      ]
-    },
-    "yourlanguage/clave-yourlanguages-subname"
-  ],
-  "version": "yourlanguage"
-}
-```
-
-
+Follow the navigation guides on [Mintlify](https://www.mintlify.com/docs/navigation) to add your language to the `mint.json` file.
 
 4. **Add Your Language to Versions**
-In the JSON file, you'll see the code below that defines the different versions of Clave Docs:
+In the `mint.json` file, you'll see the code below that defines the different versions of Clave Docs:
 
 ```json
   ],

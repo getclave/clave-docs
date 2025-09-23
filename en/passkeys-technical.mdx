@@ -41,7 +41,7 @@ The journey starts when a user decides to generate a cryptographic key pair. Her
 1. Biometric Authentication: The user initiates the key generation process by providing biometric authentication, such as a fingerprint or facial recognition. This step ensures that only the genuine user can authorize the creation of a key pair within the Secure Enclave.
 2. Internal Key Generation: Post authentication, the Secure Enclave creates the cryptographic key pair. The essential factor to note here is that the generated key remains within the Secure Enclave, never venturing outside, ensuring its absolute security.
 
-![Passkey's Technical Explainer](./images/passkeytechnical1.png)
+![Passkey's Technical Explainer](/images/technical/passkey-1.png)
 ### The Transaction Process
 
 Once the key is securely generated, it can be used to sign messages, a fundamental step for initiating transactions in the Web3 world. The process is straightforward yet robust:
@@ -50,7 +50,7 @@ Once the key is securely generated, it can be used to sign messages, a fundament
 2. Biometric Authentication for Signing: To confirm the signing request, the user provides biometric authentication once again. This step ensures that only the authorized user can approve the signing of a message using the stored key.
 3. Internal Message Signing: The Secure Enclave, upon receiving user authorization, signs the message with the key created inside the Secure Enclave.
 4. Ready for the Blockchain: The signed message is now in a transaction format, primed and ready to be recorded on the blockchain.
-![Passkey's Technical Explainer](./images/passkeytechnical2.png)
+![Passkey's Technical Explainer](/images/technical/passkey-2.png)
 
 <Accordion title="What If The User Loses The Device?">
   A genuine concern, but there's a silver lining. With Secure Enclave, even if your device falls into the wrong hands, accessing sensitive information is next to impossible. But how do you recover your account? We’ll be diving into our recovery approach in the [Recovery Section]("recovery").

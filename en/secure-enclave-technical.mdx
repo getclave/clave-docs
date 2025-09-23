@@ -2,7 +2,7 @@
 title: 'How Does Secure Enclave Work?'
 description: 'Clave Utilizes Consumer Hardware That Almost All Users Already Have in Their Everyday Devices: Secure Enclave and Passkeys.'
 ---
-![Web3 Ownership Proving](./images/securenclave1.png)
+![Web3 Ownership Proving](/images/technical/securenclave-1.png)
 
 Almost all modern devices have two primary components: **an operating system** (with associated shared storage) and a **Secure Enclave.** The operating system handles most operations except for sensitive tasks like protecting biometric data, cryptographic keys, encryption, and device unlocking.
 
@@ -18,13 +18,13 @@ Developers created a dedicated microchip called the Secure Enclave to manage the
 
 **Secure Enclave Can Make Cryptographic Operations:** The Secure Enclave supports various cryptographic operations, including key generation and signing. This means that private keys can be generated and used for cryptographic operations within the Secure Enclave without exposing them to the rest of the system.These features make the Secure Enclave hardware level secure. So, wait; What Does Hardware Security Mean? Hardware level security refers an Isolated, Memory Protected, Tamper Resistant security. And as you can see, Secure Enclave supports it.
 
-![Secure Enclave Explainer](./images/securenclave2.png)
+![Secure Enclave Explainer](/images/technical/securenclave-2.png)
 
 
 Clave utilizes Secure Enclave with Passkeys, which is an authentication mechanism that use Secure Enclave to store private keys and sign messages securely. This enables Clave to achieve one click onboarding with hardware level security.
 
 
-![Secure Enclave Explainer](./images/securenclave3.png)
+![Secure Enclave Explainer](/images/technical/securenclave-3.png)
 
 
 
@@ -57,16 +57,4 @@ We’ve launched Clave with a clear vision: to transform your everyday devices i
 **Hot Wallets:** Users must trust the wallet's software to display transaction details for signing accurately.
 
 **Clave (Consumer-TEE Based Wallets):** Clave operates through a mobile app, requiring users to trust the app to display what they are signing. Although this is similar to hot wallets, it’s important to note that the difference between Clave and traditional hardware wallets is minimal because hardware wallet firmware updates are similar to Clave’s app updates.
-
-
-Look at the Clave's onboarding flow which is powered by Passkeys:
-<iframe
-  width="860"
-  height="500"
-  src="https://www.youtube.com/embed/aM8x2qE3tgU?si=KTcvzeoYTUIZiJXK"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-></iframe>
 

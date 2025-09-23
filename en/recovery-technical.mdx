@@ -27,16 +27,15 @@ When a user creates an account with passkeys, the encrypted version of the priva
 This recovery method native to Passkeys has a flaw: if you lose all devices, you cannot recover your account. Thus, we've implemented Social Recovery.
 
 ## Second Recovery Option: Social Recovery
-Instead of using iCloud or Google Drive, users can pick family or friends to help them get their account back if needed. Users can do this by giving the friend’s or family member’s Clave nickname or address. After picking a guardian, there’s a 48-hour wait time during which users can change their mind and stop the process if they want to.
+Instead of using iCloud or Google Drive, users can pick family or friends to help them get their account back if needed. Users can do this by giving the friend’s or family member’s Clave nickname or address. After picking a backup option, there’s a 48-hour wait time during which users can change their mind and stop the process if they want to.
 
-To start getting their account back using a new device, users need to give their helper’s Clave nickname or address. Clave will then make a link that users send to their helpers. Like when picking a guardian, there’s a 48-hour wait time during the recovery process, giving users a chance to stop it from the original device if needed.
+To start getting their account back using a new device, users need to give their helper’s Clave nickname or address. Clave will then make a link that users send to their helpers. Like when picking a backup option, there’s a 48-hour wait time during the recovery process, giving users a chance to stop it from the original device if needed.
 
 This way, called Social Recovery, is all about giving users more choices to keep their accounts safe, mixing security with the help of friends or family, and making it all easy to manage.
 
-![Social Recovery Mechanism Clave](./images/recoverypic1.png)
+![Social Recovery Mechanism Clave](/images/recovery/1.png)
 
 
-## Third Recovery Option: Universal Recovery with ZK-Email
-Social Recovery is a powerful tool, but it comes with a limitation: the Guardian must have an on-chain address. To overcome this, Clave has introduced a new recovery method called Universal Recovery, which allows anyone to become a Clave Guardian using their email accounts.
+## Third Recovery Option: Email Recovery with Privy
 
-Universal Recovery leverages ZK Email to verify DKIM signatures, ensuring a secure and trustless operation. This innovative approach expands the accessibility of guardianship without compromising security. For more technical details, refer to the [next section]("zkemail-recovery-technical").
+Social Recovery is a powerful tool, but it comes with a limitation: the recoverer must have an on-chain address. To overcome this, Clave has introduced a new recovery method called Email Recovery, which allows anyone to become a Clave recoverer using their email accounts.
